@@ -62,4 +62,4 @@ CREATE INDEX ON visits (animal_id);
 CREATE INDEX ON visits (vet_id);
 
 -- index applied (third query)
-CREATE INDEX ON owners (email);
+CREATE INDEX ON owners ((lower(email)));
